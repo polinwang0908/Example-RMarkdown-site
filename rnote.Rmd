@@ -1,0 +1,50 @@
+---
+title: "R Note"
+#Let's add all the files to our git staging area
+#git add -A #the -A flag tells it git you want everything
+
+#Now we can commit
+#git commit -m "My first website commit. The begining of greatness"
+
+#Now we push. Note the addendum to normal pushing
+#git push origin master
+---
+## Fixed Effect and Robust Standard Errors
+```{r, message=FALSE, warning=FALSE,echo=TRUE,include=TRUE}
+# Loading the required libraries
+library(plm)
+library(lmtest)
+library(multiwayvcov)
+library(lfe)
+library(stargazer)
+# Loading Petersen's dataset
+data(petersen)
+
+# Pooled OLS model
+pooled.ols <- plm(formula=y~x, data=petersen, model="pooling", index=c("firmid", "year"))
+
+# Fixed effects model
+fe.firm <- plm(formula=y~x, data=petersen, model="within", index=c("firmid", "year"))
+```
+
+```{r, results="asis"}
+
+# Clustered standard errors - OLS (by firm)
+stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type="sss", cluster="group")),felm(y~x|0|0|firmid,data=petersen),type='html')
+
+# Clustered standard errors - OLS (by time)
+stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type="sss", cluster="time")),felm(y~x|0|0|year,data=petersen),type='html')
+
+# Clustered standard errors - OLS (by firm and time)
+stargazer(coeftest(pooled.ols, vcov=vcovDC(pooled.ols, type="sss")),felm(y~x|0|0|firmid+year,data=petersen),type='html')
+
+# Clustered standard errors - Fixed effect regression (by firm)
+stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type="sss", cluster="group")),felm(y~x|firmid|0|firmid,data=petersen),type='html')
+
+# Clustered standard errors - Fixed effect regression (by time)
+stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type="sss", cluster="time")),felm(y~x|firmid|0|year,data=petersen),type='html')
+
+# Clustered standard errors - Fixed effect regression (by firm and time)
+stargazer(coeftest(fe.firm, vcov=vcovDC(fe.firm, type="sss")),felm(y~x|firmid|0|firmid+year,data=petersen),type='html')
+
+```
