@@ -10,16 +10,13 @@ title: "Polin Wang"
 #git push origin master
 ---
 ****************
-> Doctoral Student
 >
-> Department of Insurance Legal Studies, and Real Estate
->
-> 288A Brooks Hall 
->
-> Terry College of Business
->
-> University of Georgia
->
-> Athens, GA, 30602
->
-> Email: [polinwang@uga.edu](polinwang@uga.edu)
+| Doctoral Student
+|
+| Department of Insurance Legal Studies, and Real Estate
+| 288A Brooks Hall 
+| Terry College of Business
+| University of Georgia
+| Athens, GA, 30602
+|
+| Email: [polinwang@uga.edu](polinwang@uga.edu)
