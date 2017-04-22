@@ -1332,18 +1332,17 @@ Residual Std. Error
 <div id="a-list-of-regressions" class="section level2">
 <h2>A List of Regressions</h2>
 <p>Apply the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.</p>
-<p>The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). <code>lapply</code> applies the regression funciton to each rating change, and for loop changes the dependent variable through <code>NONGRP_AVE</code> and <code>TOTAL_AVE</code>. Results are presented by <code>stargazer</code> package.</p>
+<p>The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). <code>lapply</code> applies the regression funciton to each rating change, and for loop changes the dependent variable through <code>NONGRP_AVE</code> and <code>TOTAL_AVE</code>. Differences in the dependent variables are recorded in the first dimesion of the list <code>[[i]]</code> whereas the differences of independent variables are recorded in the second dimension. Results are presented by <code>stargazer</code> package.</p>
 <pre class="r"><code>my_dep&lt;-c(&quot;NONGRP_AVE&quot;,&quot;TOTAL_AVE&quot;)
 my_lm &lt;-list(1:2)
 #--------------------------------------------------------------------------
 for(i in 1:2){
-my_lm[[i]]&lt;-lapply(1:10, function(x) felm(get(my_dep[i]) ~ I(RATING&gt;x)#relevel(RATING),4)
+my_lm[[i]]&lt;-lapply(1:10, function(x) felm(get(my_dep[i]) ~ I(RATING&gt;x)
            +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData))
 test&lt;-felm(get(my_dep[i]) ~ RATING
            +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData)
 my_lm[[i]][[11]]&lt;-test
 }</code></pre>
-<hr />
 <pre class="r"><code>stargazer::stargazer(my_lm[1],type=&#39;html&#39;,dep.var.labels=my_dep[1])</code></pre>
 <table style="text-align:center">
 <tr>
@@ -3792,6 +3791,23 @@ Residual Std. Error (df = 13459)
 </td>
 </tr>
 </table>
+<hr />
+</div>
+<div id="multiple-boxplot" class="section level2">
+<h2>Multiple Boxplot</h2>
+<pre class="r"><code>library(tableone)
+CreateTableOne(data=MainData[MainData$PRE==0,],vars=&#39;PRICE&#39;,strata = &#39;NYREG&#39;)</code></pre>
+<pre><code>##                    Stratified by NYREG
+##                     0           1           p      test
+##   n                 2679         760                   
+##   PRICE (mean (sd)) 0.62 (0.27) 0.52 (0.26) &lt;0.001</code></pre>
+<pre class="r"><code>CreateTableOne(data=MainData[MainData$PRE==1,],vars=&#39;PRICE&#39;,strata = &#39;NYREG&#39;)</code></pre>
+<pre><code>##                    Stratified by NYREG
+##                     0           1           p      test
+##   n                 6384        1871                   
+##   PRICE (mean (sd)) 0.60 (0.25) 0.49 (0.22) &lt;0.001</code></pre>
+<pre class="r"><code>ggplot(MainData, aes(x=as.factor(NYREG),y=PRICE,fill=as.factor(NYREG))) + geom_boxplot()+facet_wrap(~PRE)</code></pre>
+<p><img src="rnote_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 
 

@@ -81,12 +81,13 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
 
 Apply the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.
 
-The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). `lapply` applies the regression funciton to each rating change, and for loop changes the dependent variable through `NONGRP_AVE` and `TOTAL_AVE`. Results are presented by `stargazer` package.
+The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). `lapply` applies the regression funciton to each rating change, and for loop changes the dependent variable through `NONGRP_AVE` and `TOTAL_AVE`. Differences in the dependent variables are recorded in the first dimesion of the list `[[i]]` whereas the differences of independent variables are recorded in the second dimension. Results are presented by `stargazer` package.
 
 ```{r, message=FALSE, warning=FALSE,echo=FALSE,include=FALSE}
 rm(list=ls())
 library(reshape)
 library(reshape2)
+library(ggplot2)
 library(plyr)
 library(dplyr)
 library(haven)
@@ -130,17 +131,29 @@ my_dep<-c("NONGRP_AVE","TOTAL_AVE")
 my_lm <-list(1:2)
 #--------------------------------------------------------------------------
 for(i in 1:2){
-my_lm[[i]]<-lapply(1:10, function(x) felm(get(my_dep[i]) ~ I(RATING>x)#relevel(RATING),4)
+my_lm[[i]]<-lapply(1:10, function(x) felm(get(my_dep[i]) ~ I(RATING>x)
            +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData))
 test<-felm(get(my_dep[i]) ~ RATING
            +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData)
 my_lm[[i]][[11]]<-test
 }
 ```
-
-***********
-
 ```{r, results="asis"}
 stargazer::stargazer(my_lm[1],type='html',dep.var.labels=my_dep[1])
 stargazer::stargazer(my_lm[2],type='html',dep.var.labels=my_dep[2])
+```
+
+***********
+
+## Multiple Boxplot
+
+```{r, message=FALSE, warning=FALSE, stageOne,echo=FALSE,include=FALSE}
+load(paste(Root,"Projects/Project1/MainData_RATING_REIN_WR_test.Rta",sep=""))
+MainData$PRE<-as.numeric(I(MainData$YEAR>=1997))
+```
+```{r, message=FALSE, warning=FALSE, echo=TRUE}
+library(tableone)
+CreateTableOne(data=MainData[MainData$PRE==0,],vars='PRICE',strata = 'NYREG')
+CreateTableOne(data=MainData[MainData$PRE==1,],vars='PRICE',strata = 'NYREG')
+ggplot(MainData, aes(x=as.factor(NYREG),y=PRICE,fill=as.factor(NYREG))) + geom_boxplot()+facet_wrap(~PRE)
 ```
