@@ -7,5 +7,7 @@ navbar:
       href: index.html
     - text: "About Me"
       href: about.html
+    - text: "Research"
+      href: research.html
     - text: "R Note"
       href: rnote.html

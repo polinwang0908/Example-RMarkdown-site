@@ -1,0 +1,11 @@
+---
+title: "Research"
+output: html_document
+---
+**************
+## Working Paper
+
+- Carson, James M., David Eckles, and Polin Wang, _Smoke 'Em If You Got 'Em: Pricing Power in the Life Insurance Market_
+
+- McCarthy, David G. and Polin Wang, _Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality_
+
