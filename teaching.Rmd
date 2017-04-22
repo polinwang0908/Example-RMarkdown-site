@@ -1,0 +1,15 @@
+---
+title: "Teaching"
+output: html_document
+---
+**************
+### University of Georgia
+
+- Predictive Modeling BUSN 4000 Teaching Assistant
+
+    (Fall 2015, Spring 2016, Fall 2016, Spring 2017)
+
+- Statistical Analysis for Business MSIT 3000 Teaching Assistant 
+  
+    (Fall 2015, Spring 2016, Fall 2016, Spring 2017)
+

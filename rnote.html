@@ -283,6 +283,9 @@ div.tocify {
   <a href="research.html">Research</a>
 </li>
 <li>
+  <a href="teaching.html">Teaching</a>
+</li>
+<li>
   <a href="rnote.html">R Note</a>
 </li>
       </ul>
@@ -303,8 +306,8 @@ div.tocify {
 
 
 <hr />
-<div id="fixed-effect-clustering" class="section level2">
-<h2>Fixed Effect &amp; Clustering</h2>
+<div id="fixed-effect-clustering" class="section level3">
+<h3>Fixed Effect &amp; Clustering</h3>
 <p>Two ways of getting fixed effect estimation and clustering standard errors: <code>plm</code> and <code>felm</code>. They are consistent without fixed effect, and are slightly different in degree of freedom adjustment when running with either one or both dimensions of fixed effect.</p>
 <pre class="r"><code># Loading the required libraries
 library(plm)
@@ -1309,15 +1312,15 @@ Residual Std. Error
 </table>
 <hr />
 </div>
-<div id="debugging" class="section level2">
-<h2>Debugging</h2>
+<div id="debugging" class="section level3">
+<h3>Debugging</h3>
 <ul>
 <li>Function to trace back to upper level: <code>recover()</code>.</li>
 </ul>
 <hr />
 </div>
-<div id="r-markdown-note" class="section level2">
-<h2>R Markdown Note</h2>
+<div id="r-markdown-note" class="section level3">
+<h3>R Markdown Note</h3>
 <ul>
 <li>Link: <code>[link](http://xxxx.com)</code></li>
 <li>Quote: <code>&gt;abc</code></li>
@@ -1325,15 +1328,15 @@ Residual Std. Error
 </ul>
 <hr />
 </div>
-<div id="relevel-factor" class="section level2">
-<h2>Relevel Factor</h2>
+<div id="relevel-factor" class="section level3">
+<h3>Relevel Factor</h3>
 <ul>
 <li>Change reference group to: <code>relevel(RATING,4)</code></li>
 </ul>
 <hr />
 </div>
-<div id="a-list-of-regressions" class="section level2">
-<h2>A List of Regressions</h2>
+<div id="a-list-of-regressions" class="section level3">
+<h3>A List of Regressions</h3>
 <p>Apply the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.</p>
 <p>The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). <code>lapply</code> applies the regression funciton to each rating change, and for loop changes the dependent variable through <code>NONGRP_AVE</code> and <code>TOTAL_AVE</code>. Differences in the dependent variables are recorded in the first dimesion of the list <code>[[i]]</code> whereas the differences of independent variables are recorded in the second dimension. Results are presented by <code>stargazer</code> package.</p>
 <pre class="r"><code>my_dep&lt;-c(&quot;NONGRP_AVE&quot;,&quot;TOTAL_AVE&quot;)
@@ -3796,8 +3799,8 @@ Residual Std. Error (df = 13459)
 </table>
 <hr />
 </div>
-<div id="multiple-boxplot" class="section level2">
-<h2>Multiple Boxplot</h2>
+<div id="multiple-boxplot" class="section level3">
+<h3>Multiple Boxplot</h3>
 <pre class="r"><code>library(tableone)
 CreateTableOne(data=MainData[MainData$PRE==0,],vars=&#39;PRICE&#39;,strata = &#39;NYREG&#39;)</code></pre>
 <pre><code>##                    Stratified by NYREG

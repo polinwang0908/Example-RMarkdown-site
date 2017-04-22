@@ -3,7 +3,7 @@ title: "Research"
 output: html_document
 ---
 **************
-## Working Paper
+### Working Paper
 
 - Carson, James M., David Eckles, and Polin Wang, _Smoke 'Em If You Got 'Em: Pricing Power in the Life Insurance Market_
 
