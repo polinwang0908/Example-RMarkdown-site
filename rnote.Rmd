@@ -21,31 +21,37 @@ library(stargazer)
 data(petersen)
 
 # Pooled OLS model
-pooled.ols <- plm(formula=y~x, data=petersen, model="pooling", index=c("firmid", "year"))
+pooled.ols<-plm(y~x,data=petersen,model="pooling",index=c("firmid", "year"))
 
 # Fixed effects model
-fe.firm <- plm(formula=y~x, data=petersen, model="within", index=c("firmid", "year"))
+fe.firm<-plm(y~x,data=petersen,model="within",index=c("firmid", "year"))
 ```
 
 ```{r, results="asis"}
 
 # Clustered standard errors - OLS (by firm)
-stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type="sss", cluster="group")),felm(y~x|0|0|firmid,data=petersen),type='html')
+stargazer(coeftest(pooled.ols,vcov=vcovHC(pooled.ols,type="sss",cluster="group")),
+          felm(y~x|0|0|firmid,data=petersen),type='html')
 
 # Clustered standard errors - OLS (by time)
-stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type="sss", cluster="time")),felm(y~x|0|0|year,data=petersen),type='html')
+stargazer(coeftest(pooled.ols,vcov=vcovHC(pooled.ols,type="sss",cluster="time")),
+          felm(y~x|0|0|year,data=petersen),type='html')
 
 # Clustered standard errors - OLS (by firm and time)
-stargazer(coeftest(pooled.ols, vcov=vcovDC(pooled.ols, type="sss")),felm(y~x|0|0|firmid+year,data=petersen),type='html')
+stargazer(coeftest(pooled.ols,vcov=vcovDC(pooled.ols,type="sss")),
+          felm(y~x|0|0|firmid+year,data=petersen),type='html')
 
 # Clustered standard errors - Fixed effect regression (by firm)
-stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type="sss", cluster="group")),felm(y~x|firmid|0|firmid,data=petersen),type='html')
+stargazer(coeftest(fe.firm,vcov=vcovHC(fe.firm,type="sss",cluster="group")),
+          felm(y~x|firmid|0|firmid,data=petersen),type='html')
 
 # Clustered standard errors - Fixed effect regression (by time)
-stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type="sss", cluster="time")),felm(y~x|firmid|0|year,data=petersen),type='html')
+stargazer(coeftest(fe.firm,vcov=vcovHC(fe.firm,type="sss",cluster="time")),
+          felm(y~x|firmid|0|year,data=petersen),type='html')
 
 # Clustered standard errors - Fixed effect regression (by firm and time)
-stargazer(coeftest(fe.firm, vcov=vcovDC(fe.firm, type="sss")),felm(y~x|firmid|0|firmid+year,data=petersen),type='html')
+stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
+          felm(y~x|firmid|0|firmid+year,data=petersen),type='html')
 
 ```
 

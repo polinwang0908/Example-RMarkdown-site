@@ -313,12 +313,13 @@ library(stargazer)
 data(petersen)
 
 # Pooled OLS model
-pooled.ols &lt;- plm(formula=y~x, data=petersen, model=&quot;pooling&quot;, index=c(&quot;firmid&quot;, &quot;year&quot;))
+pooled.ols&lt;-plm(y~x,data=petersen,model=&quot;pooling&quot;,index=c(&quot;firmid&quot;, &quot;year&quot;))
 
 # Fixed effects model
-fe.firm &lt;- plm(formula=y~x, data=petersen, model=&quot;within&quot;, index=c(&quot;firmid&quot;, &quot;year&quot;))</code></pre>
+fe.firm&lt;-plm(y~x,data=petersen,model=&quot;within&quot;,index=c(&quot;firmid&quot;, &quot;year&quot;))</code></pre>
 <pre class="r"><code># Clustered standard errors - OLS (by firm)
-stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type=&quot;sss&quot;, cluster=&quot;group&quot;)),felm(y~x|0|0|firmid,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(pooled.ols,vcov=vcovHC(pooled.ols,type=&quot;sss&quot;,cluster=&quot;group&quot;)),
+          felm(y~x|0|0|firmid,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
@@ -496,7 +497,8 @@ Residual Std. Error
 </tr>
 </table>
 <pre class="r"><code># Clustered standard errors - OLS (by time)
-stargazer(coeftest(pooled.ols, vcov=vcovHC(pooled.ols, type=&quot;sss&quot;, cluster=&quot;time&quot;)),felm(y~x|0|0|year,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(pooled.ols,vcov=vcovHC(pooled.ols,type=&quot;sss&quot;,cluster=&quot;time&quot;)),
+          felm(y~x|0|0|year,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
@@ -674,7 +676,8 @@ Residual Std. Error
 </tr>
 </table>
 <pre class="r"><code># Clustered standard errors - OLS (by firm and time)
-stargazer(coeftest(pooled.ols, vcov=vcovDC(pooled.ols, type=&quot;sss&quot;)),felm(y~x|0|0|firmid+year,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(pooled.ols,vcov=vcovDC(pooled.ols,type=&quot;sss&quot;)),
+          felm(y~x|0|0|firmid+year,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
@@ -852,7 +855,8 @@ Residual Std. Error
 </tr>
 </table>
 <pre class="r"><code># Clustered standard errors - Fixed effect regression (by firm)
-stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type=&quot;sss&quot;, cluster=&quot;group&quot;)),felm(y~x|firmid|0|firmid,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(fe.firm,vcov=vcovHC(fe.firm,type=&quot;sss&quot;,cluster=&quot;group&quot;)),
+          felm(y~x|firmid|0|firmid,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
@@ -1001,7 +1005,8 @@ Residual Std. Error
 </tr>
 </table>
 <pre class="r"><code># Clustered standard errors - Fixed effect regression (by time)
-stargazer(coeftest(fe.firm, vcov=vcovHC(fe.firm, type=&quot;sss&quot;, cluster=&quot;time&quot;)),felm(y~x|firmid|0|year,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(fe.firm,vcov=vcovHC(fe.firm,type=&quot;sss&quot;,cluster=&quot;time&quot;)),
+          felm(y~x|firmid|0|year,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
@@ -1150,7 +1155,8 @@ Residual Std. Error
 </tr>
 </table>
 <pre class="r"><code># Clustered standard errors - Fixed effect regression (by firm and time)
-stargazer(coeftest(fe.firm, vcov=vcovDC(fe.firm, type=&quot;sss&quot;)),felm(y~x|firmid|0|firmid+year,data=petersen),type=&#39;html&#39;)</code></pre>
+stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type=&quot;sss&quot;)),
+          felm(y~x|firmid|0|firmid+year,data=petersen),type=&#39;html&#39;)</code></pre>
 <table style="text-align:center">
 <tr>
 <td colspan="3" style="border-bottom: 1px solid black">
