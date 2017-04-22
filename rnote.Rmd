@@ -68,3 +68,79 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
 - Link: `[link](http://xxxx.com)`
 - Quote: `>abc`
 - Numbered header `#.`
+
+**************
+
+## Relevel Factor
+
+- Change reference group to: `relevel(RATING,4)`
+
+**************
+
+## A List of Regressions
+
+Apply the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.
+
+The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). `lapply` applies the regression funciton to each rating change, and for loop changes the dependent variable through `NONGRP_AVE` and `TOTAL_AVE`. Results are presented by `stargazer` package.
+
+```{r, message=FALSE, warning=FALSE,echo=FALSE,include=FALSE}
+rm(list=ls())
+library(reshape)
+library(reshape2)
+library(plyr)
+library(dplyr)
+library(haven)
+library(plm)
+library(lfe)
+library(data.table)
+library(lmtest)
+library(multiwayvcov)
+library(stargazer)
+library(psych)
+#============================================================================
+Root      <-(if(dir.exists("/Users/polinwang/Google Drive g2/UGA/NAICData_R/"))
+  "/Users/polinwang/Google Drive g2/UGA/NAICData_R/"
+  else
+    "C:/Users/pw21703/Google Drive/UGA/NAICData_R/")
+OutPath   <-paste(Root,"Life/StatementsData/",sep="")
+#--------------------------------------------------------------------------
+load(paste(Root,"Projects/Project1/DataLife2.Rta",sep=""))
+MainData<-MainData[MainData$MUTUAL==1|MainData$STOCK==1,]
+# 18680 -> lag,winsor,na
+load(paste(Root,"Projects/Project1/Rating_AMBest_Full.Rta",sep=""));df_dups <- Data[c("COCODE", "YEAR")];Data<-Data[!duplicated(df_dups),]
+MainData<-left_join(MainData,Data,by=c("YEAR","COCODE"))
+MainData<-na.omit(MainData)
+# 12205 -> lag,winsor,na
+load(paste(OutPath,"REINS.Rta",sep=""))
+MainData<-left_join(MainData,Data)
+MainData<-na.omit(MainData)
+
+load(paste(OutPath,"PolSize.Rta",sep=""))
+Data<-subset(Data,select=c("COCODE","YEAR","TOTAL_AVE","GRP_AVE","NONGRP_AVE"))
+MainData<-left_join(MainData,Data)
+MainData<-na.omit(MainData)
+MainData$PRICE<-winsor(MainData$PRICE,.01)
+MainData$REINS<-winsor(MainData$REINS,.01)
+MainData<-pdata.frame(MainData)
+MainData$lagREINS<-lag(MainData$REINS)
+#--------------------------------------------------------------------------
+```
+```{r, message=FALSE, warning=FALSE,echo=TRUE,include=TRUE}
+my_dep<-c("NONGRP_AVE","TOTAL_AVE")
+my_lm <-list(1:2)
+#--------------------------------------------------------------------------
+for(i in 1:2){
+my_lm[[i]]<-lapply(1:10, function(x) felm(get(my_dep[i]) ~ I(RATING>x)#relevel(RATING),4)
+           +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData))
+test<-felm(get(my_dep[i]) ~ RATING
+           +SINGLE+HERF+NATIONAL+NYREG+STOCK+SIZE+AGE+lag(REINS)|YEAR|0|COCODE,data=MainData)
+my_lm[[i]][[11]]<-test
+}
+```
+
+***********
+
+```{r, results="asis"}
+stargazer::stargazer(my_lm[1],type='html',dep.var.labels=my_dep[1])
+stargazer::stargazer(my_lm[2],type='html',dep.var.labels=my_dep[2])
+```
