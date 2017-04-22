@@ -2,4 +2,4 @@
 title: "About Me"
 ---
 
-Thinking..
+I am a PhD student in the Department of Insurance, Legal Studies, and Real Estate (ILSRE) in the Terry College of Business at the University of Georgia. My research interests include martality modeling, asset liability management, insurance capital market, and market discipline.
