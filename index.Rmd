@@ -19,4 +19,4 @@ title: "Polin Wang"
 | University of Georgia
 | Athens, GA, 30602
 |
-| Email: [polinwang@uga.edu](polinwang@uga.edu)
+| Email: [polinwang@uga.edu](mailto:polinwang@uga.edu)

@@ -61,3 +61,4 @@ stargazer(coeftest(fe.firm, vcov=vcovDC(fe.firm, type="sss")),felm(y~x|firmid|0|
 
 - Link: `[link](http://xxxx.com)`
 - Quote: `>abc`
+- Numbered header `#.`
