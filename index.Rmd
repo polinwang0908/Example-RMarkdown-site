@@ -21,9 +21,19 @@ title: "Polin Wang"
 |
 | Email: [polinwang@uga.edu](mailto:polinwang@uga.edu)
 
+\
+\
+
+
+
 #### Research Interests
 Mortality modeling, asset liability management, insurance capital market, and market discipine
 
+#### Programming Languages
+- VBA (professional with insurance pricing and reserving experience)
+- Prophet (professional with insurance pricing and reserving experience)
+- Matlab (asset liability optimization projects)
+- R (recently developed interest in)
+
 #### Society of Actuary (SOA) Exams Completed:
 P, FM, MFE, MLC, and C
-
