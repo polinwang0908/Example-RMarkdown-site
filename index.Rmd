@@ -20,3 +20,10 @@ title: "Polin Wang"
 | Athens, GA, 30602
 |
 | Email: [polinwang@uga.edu](mailto:polinwang@uga.edu)
+
+#### Research Interests
+Mortality modeling, asset liability management, insurance capital market, and market discipine
+
+#### Society of Actuary (SOA) Exams Completed:
+P, FM, MFE, MLC, and C
+

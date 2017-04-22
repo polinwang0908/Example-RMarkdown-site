@@ -79,9 +79,9 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
 
 ### A List of Regressions
 
-Apply the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.
+Applying the regression function on a list of data gives a flexibility and convenience to run hundreds of regression models just with 3~4 lines of code.
 
-The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). `lapply` applies the regression funciton to each rating change, and for loop changes the dependent variable through `NONGRP_AVE` and `TOTAL_AVE`. Differences in the dependent variables are recorded in the first dimesion of the list `[[i]]` whereas the differences of independent variables are recorded in the second dimension. Results are presented by `stargazer` package.
+The following performs year fixed effect regression with firm clustering on a set of varing dependent variables (2) and independent variables (11). `lapply` applies the regression funciton to each rating change, and for loop changes the dependent variable through `NONGRP_AVE` and `TOTAL_AVE`. Differences in the dependent variables are recorded in the first dimesion of the list `[[i]]` whereas the differences of independent variables are recorded in the second dimension `[[i]][[1:11]]`. Results are presented by `stargazer` package.
 
 ```{r, message=FALSE, warning=FALSE,echo=FALSE,include=FALSE}
 rm(list=ls())
