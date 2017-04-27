@@ -157,3 +157,21 @@ CreateTableOne(data=MainData[MainData$PRE==0,],vars='PRICE',strata = 'NYREG')
 CreateTableOne(data=MainData[MainData$PRE==1,],vars='PRICE',strata = 'NYREG')
 ggplot(MainData, aes(x=as.factor(NYREG),y=PRICE,fill=as.factor(NYREG))) + geom_boxplot()+facet_wrap(~PRE)
 ```
+
+***********
+
+### Directly Load HMD Data
+
+```{r, message=FALSE, warning=FALSE,echo=FALSE,include=FALSE}
+user_hmd<-"polinwang@uga.edu"
+pass_hmd<-"Zubaby0822"
+```
+```{r, message=FALSE, warning=FALSE, echo=TRUE}
+# load required packages
+library(HMDHFDplus)
+
+# load life tables for men, USA and JPN
+usa <- readHMDweb('USA', "mltper_1x1", user_hmd, pass_hmd)
+jpn <- readHMDweb('JPN', "mltper_1x1", user_hmd, pass_hmd)
+summary(usa)
+```

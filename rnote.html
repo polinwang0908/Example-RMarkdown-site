@@ -3814,6 +3814,38 @@ CreateTableOne(data=MainData[MainData$PRE==0,],vars=&#39;PRICE&#39;,strata = &#3
 ##   PRICE (mean (sd)) 0.60 (0.25) 0.49 (0.22) &lt;0.001</code></pre>
 <pre class="r"><code>ggplot(MainData, aes(x=as.factor(NYREG),y=PRICE,fill=as.factor(NYREG))) + geom_boxplot()+facet_wrap(~PRE)</code></pre>
 <p><img src="rnote_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="directly-load-hmd-data" class="section level3">
+<h3>Directly Load HMD Data</h3>
+<pre class="r"><code># load required packages
+library(HMDHFDplus)
+
+# load life tables for men, USA and JPN
+usa &lt;- readHMDweb(&#39;USA&#39;, &quot;mltper_1x1&quot;, user_hmd, pass_hmd)
+jpn &lt;- readHMDweb(&#39;JPN&#39;, &quot;mltper_1x1&quot;, user_hmd, pass_hmd)
+summary(usa)</code></pre>
+<pre><code>##       Year           Age            mx                qx         
+##  Min.   :1933   Min.   :  0   Min.   :0.00011   Min.   :0.00011  
+##  1st Qu.:1953   1st Qu.: 27   1st Qu.:0.00202   1st Qu.:0.00202  
+##  Median :1974   Median : 55   Median :0.01331   Median :0.01322  
+##  Mean   :1974   Mean   : 55   Mean   :0.10843   Mean   :0.09527  
+##  3rd Qu.:1995   3rd Qu.: 83   3rd Qu.:0.12446   3rd Qu.:0.11716  
+##  Max.   :2015   Max.   :110   Max.   :0.76385   Max.   :1.00000  
+##        ax               lx               dx               Lx       
+##  Min.   :0.0600   Min.   :     0   Min.   :   0.0   Min.   :    0  
+##  1st Qu.:0.5000   1st Qu.: 22671   1st Qu.: 134.0   1st Qu.:21366  
+##  Median :0.5000   Median : 82301   Median : 374.0   Median :81829  
+##  Mean   :0.5053   Mean   : 62394   Mean   : 900.9   Mean   :61936  
+##  3rd Qu.:0.5000   3rd Qu.: 94766   3rd Qu.:1613.0   3rd Qu.:94671  
+##  Max.   :1.6200   Max.   :100000   Max.   :7170.0   Max.   :99406  
+##        Tx                ex        OpenInterval   
+##  Min.   :      0   Min.   : 1.31   Mode :logical  
+##  1st Qu.: 126068   1st Qu.: 5.55   FALSE:9130     
+##  Median :1724200   Median :20.88   TRUE :83       
+##  Mean   :2343910   Mean   :26.35   NA&#39;s :0        
+##  3rd Qu.:4242628   3rd Qu.:44.76                  
+##  Max.   :7666767   Max.   :76.67</code></pre>
 </div>
 
 
