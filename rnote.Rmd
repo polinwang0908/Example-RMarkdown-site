@@ -173,5 +173,5 @@ library(HMDHFDplus)
 # load life tables for men, USA and JPN
 usa <- readHMDweb('USA', "mltper_1x1", user_hmd, pass_hmd)
 jpn <- readHMDweb('JPN', "mltper_1x1", user_hmd, pass_hmd)
-summary(usa)
+plot(usa[usa$Year==1933,]$Lx~usa[usa$Year==1933,]$Age,type='l')
 ```
