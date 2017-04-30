@@ -9,3 +9,4 @@ output: html_document
 
 - McCarthy, David G. and Polin Wang, _Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality_
 
+- McCarthy, David G. and Polin Wang, _An investigation of period and cohort effects in adult mortality across 38 countries_
