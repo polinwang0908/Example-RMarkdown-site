@@ -71,6 +71,7 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
 - Link: `[link](http://xxxx.com)`
 - Quote: `>abc`
 - Numbered header `#.`
+- Stargazer header removal: `header=FALSE`
 
 **************
 
@@ -102,11 +103,8 @@ library(multiwayvcov)
 library(stargazer)
 library(psych)
 #============================================================================
-Root      <-(if(dir.exists("/Users/polinwang/Google Drive g2/UGA/NAICData_R/"))
-  "/Users/polinwang/Google Drive g2/UGA/NAICData_R/"
-  else
-    "C:/Users/pw21703/Google Drive/UGA/NAICData_R/")
-OutPath   <-paste(Root,"Life/StatementsData/",sep="")
+Root   <-"~/Google Drive/UGA/NAICData_R/"
+OutPath<-paste(Root,"Life/StatementsData/",sep="")
 #--------------------------------------------------------------------------
 load(paste(Root,"Projects/Project1/DataLife2.Rta",sep=""))
 MainData<-MainData[MainData$MUTUAL==1|MainData$STOCK==1,]
