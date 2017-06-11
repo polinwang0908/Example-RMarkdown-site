@@ -72,6 +72,12 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
 - Quote: `>abc`
 - Numbered header `#.`
 - Stargazer header removal: `header=FALSE`
+- Upload website to github:
+    1. Build Website
+    1. Command in shell
+        - `git add -A`
+        - `git commit -m "My first website"`
+        - `git push origin master`
 
 **************
 
