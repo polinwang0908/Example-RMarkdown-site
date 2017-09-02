@@ -78,7 +78,13 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
         - `git add -A`
         - `git commit -m "My first website"`
         - `git push origin master`
-
+- Matrices
+    1. Jacobian
+        - Change of variable `x`, `y` $\to$ `u`, `v`
+        - Determinant of $$\left[\begin{array}{rr}\frac{dx}{du} & \frac{dx}{dv}\\ \frac{dy}{du} & \frac{dy}{dv}\end{array}\right]
+$$
+    1. Hessian: all combinations of 2nd derivative
+    
 **************
 
 ### Relevel Factor
