@@ -42,4 +42,4 @@ P, FM, MFE, MLC, and C
 
 ************
 
-Last updated : \today
+Last updated : `r format(Sys.time(), '%B, %Y')`
