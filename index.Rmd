@@ -11,7 +11,7 @@ title: "Polin Wang"
 ---
 ****************
 >
-| Doctoral Student
+| PhD Candidate
 |
 | Department of Insurance Legal Studies, and Real Estate
 | B417 Amos Hall 
@@ -28,13 +28,18 @@ title: "Polin Wang"
 
 
 #### Research Interests
-Mortality modeling, asset liability management, insurance capital market, and market discipine
+Mortality modeling, asset liability management, generational wealth accounts, and market discipine
 
 #### Programming Languages
 - VBA (professional with insurance pricing and reserving experience)
 - Prophet (professional with insurance pricing and reserving experience)
 - Matlab (asset liability optimization projects)
-- R (recently developed interest in)
+- R (recently developed interests in)
 
 #### Society of Actuary (SOA) Exams Completed:
 P, FM, MFE, MLC, and C
+
+
+************
+
+Last updated : \today

@@ -3,10 +3,25 @@ title: "Research"
 output: html_document
 ---
 **************
+
+### Presentation
+
+- UGA/FSU Symposium, Tallahassee, FL, May 2016
+    "A Comparison between Lee-Carter Model and a Distribution-base Cohort Model"
+    
+- Southern Risk and Insurance Annual Meeting 2016, Savannah, GA, Nov 2016
+    "Pricing Power in Life Insurance Industry"
+    
+- 13 International Longevity Risk and Capital Markets Solutions Conference, Taipei, Taiwan, Sep 2017
+    "An investigation of period and cohort effects in adult mortality across 38 countries"
+    
+- Southern Risk and Insurance Annual Meeting 2017, Nashville, TN, Nov 2017
+    "Smoke'Em If You Got'Em: Market Discipline in the Life Insurance Industry"
+
 ### Working Paper
 
-- Carson, James M., David Eckles, and Polin Wang, _Smoke 'Em If You Got 'Em: Pricing Power in the Life Insurance Market_
+- McCarthy, David G. and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
 
-- McCarthy, David G. and Polin Wang, _Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality_
+- Carson, James M., David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in March 2018_
 
-- McCarthy, David G. and Polin Wang, _An investigation of period and cohort effects in adult mortality across 38 countries_
+- McCarthy, David G. and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _Under review at North American Actuarial Journal_
