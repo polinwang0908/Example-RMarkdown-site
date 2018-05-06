@@ -1,0 +1,77 @@
+---
+title: "ggplot2 Brushing"
+output: 
+  flexdashboard::flex_dashboard:
+    social: menu
+    source_code: embed
+runtime: shiny
+---
+
+
+```{r, echo = FALSE}
+rm(list=ls())
+library(shinydashboard)
+library(leaflet)
+library(DT)
+library(rmapshaper)
+library(raster)
+library(shiny)
+
+#fr.prj <- readOGR(dsn="~/Google Drive/UGA/MortalityModel/FrenchDep/gadm34_FRA_shp",  layer="gadm34_FRA_2")
+fr.prj<-getData('GADM', country='FRA', level=2)
+
+id = as.numeric(as.character(fr.prj@data$CCA_2))
+id[is.na(id)] = 20
+fr.prj <- ms_simplify(fr.prj)
+
+googleid='1NNnvONEHHQJxZud8bgA-o8bdzqFmK55E'
+load(url(sprintf("https://docs.google.com/uc?id=%s&export=download",googleid)))
+depts  = 1:98
+cohort = c(time(results[[1]][[1]]))
+temp   = list()
+
+startC = 1900
+endC   = 1950
+cc     = which(cohort==startC):which(cohort==endC)
+
+
+kk = sapply(depts,function(i)results[[1]][[i]][cc,2])
+kk = kk[,1:length(fr.prj)]
+
+kk = kk[,id]
+
+ui = fluidPage(
+  sliderInput("time", "Cohort",startC, 
+              endC,
+              value = startC,
+              step=1,
+              animate=TRUE),
+  leafletOutput("mymap")
+)
+  
+server <- function(input, output, session) {
+  
+  output$mymap <- renderLeaflet({
+    #leaflet(fr.prj) %>%
+    #  addMarkers(data = points(),popup=as.character(points()$a))
+    leaflet(fr.prj) %>%
+      addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
+                  opacity = 1.0, fillOpacity = 0.5,
+                  fillColor = colorQuantile("YlOrRd", kk[which(startC:endC==input$time),])(kk[which(startC:endC==input$time),]),#kk[input$time,],
+                  highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                      bringToFront = TRUE),
+                  label = sprintf(
+                    "<strong>%s</strong><br/> Level coefficent: %g",
+                    fr.prj@data$NAME_2, kk[which(startC:endC==input$time),]
+                  ) %>% lapply(htmltools::HTML),
+                  labelOptions = labelOptions(
+                    style = list("font-weight" = "normal", padding = "3px 8px"),
+                    textsize = "15px",
+                    direction = "auto"))
+  })
+}
+    
+shinyApp(ui, server)
+
+```
+
