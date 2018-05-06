@@ -14,4 +14,4 @@ navbar:
     - text: "R Note"
       href: rnote.html
     - text: "French data test"
-      href: french.html
+      href: 'https://polinwang.shinyapps.io/test/'
