@@ -4,24 +4,53 @@ output: html_document
 ---
 **************
 
-### Presentation
+### Presentations
+
+- Southern Risk and Insurance Annual Meeting 2018, Chicago, IL, Nov 2018
+    "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis
+
+- Southern Risk and Insurance Annual Meeting 2018, Chicago, IL, Nov 2018
+    "An analysis of period and cohort mortality shocks in international data" with David McCarthy
+
+- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018
+    "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems" With David McCarthy, presented by David McCarthy
+
+- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018
+    "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis, presented by David McCarthy
+
+- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018
+    "An analysis of period and cohort mortality shocks in international data" With David McCarthy
+
+- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018
+    "On the existence of market discipline in the face of product complexity and firm opacity" With James Carson and David Eckles
+
+- Southern Risk and Insurance Annual Meeting 2017, Nashville, TN, Nov 2017
+    "Smoke'Em If You Got'Em: Market Discipline in the Life Insurance Industry" With James Carson and David Eckles
+
+- 13 International Longevity Risk and Capital Markets Solutions Conference, Taipei, Taiwan, Sep 2017
+    "An investigation of period and cohort effects in adult mortality across 38 countries" With David McCarthy
+
+- Southern Risk and Insurance Annual Meeting 2016, Savannah, GA, Nov 2016
+    "Pricing power in life insurance industry" With James Carson and David Eckles
 
 - UGA/FSU Symposium, Tallahassee, FL, May 2016
-    "A Comparison between Lee-Carter Model and a Distribution-base Cohort Model"
+    "A comparison between Lee-Carter model and a distribution-base cohort model" With David McCarthy
     
-- Southern Risk and Insurance Annual Meeting 2016, Savannah, GA, Nov 2016
-    "Pricing Power in Life Insurance Industry"
     
-- 13 International Longevity Risk and Capital Markets Solutions Conference, Taipei, Taiwan, Sep 2017
-    "An investigation of period and cohort effects in adult mortality across 38 countries"
     
-- Southern Risk and Insurance Annual Meeting 2017, Nashville, TN, Nov 2017
-    "Smoke'Em If You Got'Em: Market Discipline in the Life Insurance Industry"
+
 
 ### Working Paper
 
-- McCarthy, David G. and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
+- McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
 
-- Carson, James M., David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in March 2018_
+- McCarthy, David and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
 
-- McCarthy, David G. and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _Under review at North American Actuarial Journal_
+- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _Revise and resubmit at North American Actuarial Journal_
+
+- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in March 2018_
+
+- McCarthy, David and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
+
+
+

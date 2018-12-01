@@ -118,10 +118,10 @@ library(psych)
 Root   <-"~/Google Drive/UGA/NAICData_R/"
 OutPath<-paste(Root,"Life/StatementsData/",sep="")
 #--------------------------------------------------------------------------
-load(paste(Root,"Projects/Project1/DataLife2.Rta",sep=""))
+load(paste(Root,"Projects/Project1 - CarsonEckles - life price/DataLife2.Rta",sep=""))
 MainData<-MainData[MainData$MUTUAL==1|MainData$STOCK==1,]
 # 18680 -> lag,winsor,na
-load(paste(Root,"Projects/Project1/Rating_AMBest_Full.Rta",sep=""));df_dups <- Data[c("COCODE", "YEAR")];Data<-Data[!duplicated(df_dups),]
+load(paste(Root,"Projects/Project1 - CarsonEckles - life price/Rating_AMBest_Full.Rta",sep=""));df_dups <- Data[c("COCODE", "YEAR")];Data<-Data[!duplicated(df_dups),]
 MainData<-left_join(MainData,Data,by=c("YEAR","COCODE"))
 MainData<-na.omit(MainData)
 # 12205 -> lag,winsor,na
@@ -161,7 +161,7 @@ stargazer::stargazer(my_lm[2],type='html',dep.var.labels=my_dep[2])
 ### Multiple Boxplot
 
 ```{r, message=FALSE, warning=FALSE, stageOne,echo=FALSE,include=FALSE}
-load(paste(Root,"Projects/Project1/MainData_RATING_REIN_WR_test.Rta",sep=""))
+load(paste(Root,"Projects/Project1 - CarsonEckles - life price/MainData_RATING_REIN_WR_test.Rta",sep=""))
 MainData$PRE<-as.numeric(I(MainData$YEAR>=1997))
 ```
 ```{r, message=FALSE, warning=FALSE, echo=TRUE}

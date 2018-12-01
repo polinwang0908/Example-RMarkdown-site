@@ -12,4 +12,8 @@ output: html_document
 - Statistical Analysis for Business MSIT 3000 Teaching Assistant 
   
     (Fall 2015, Spring 2016, Fall 2016, Spring 2017)
+    
+- Risk Management and Insurance RMIN 4000 Instructor
+
+    (Spring 2019)
 
