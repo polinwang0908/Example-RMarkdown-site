@@ -6,10 +6,10 @@ output: html_document
 
 ### Presentations
 
-- Southern Risk and Insurance Annual Meeting 2018, Chicago, IL, Nov 2018
+- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
     "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis
 
-- Southern Risk and Insurance Annual Meeting 2018, Chicago, IL, Nov 2018
+- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
     "An analysis of period and cohort mortality shocks in international data" with David McCarthy
 
 - 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018
