@@ -23,17 +23,15 @@ title: "Polin Wang"
 
 \
 \
-\
 
 
+#### Curriculum vitae
+
+[Download my CV](https://drive.google.com/file/d/1YbXezDE1gGo8kL_dIz6GE9ALaCwGrxOB/view?usp=sharing)
 
 #### Research Interests
 
 Mortality modeling, asset liability management, generational wealth accounts, and market discipine
-
-#### CV
-
-[Download my CV](https://drive.google.com/file/d/1YbXezDE1gGo8kL_dIz6GE9ALaCwGrxOB/view?usp=sharing)
 
 #### Programming Languages
 
