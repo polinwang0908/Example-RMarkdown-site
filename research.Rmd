@@ -48,7 +48,7 @@ output: html_document
 
 - McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _Revise and resubmit at North American Actuarial Journal_
 
-- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in March 2018_
+- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in January 2019_
 
 - McCarthy, David and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
 
