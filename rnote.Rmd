@@ -193,10 +193,13 @@ plot(usa[usa$Year==1933,]$Lx~usa[usa$Year==1933,]$Age,type='l')
 
 ### Law of Large Number and Central Limit Theorem
 
-- **Law of Large Number**: For any small $\epsilon>0$, $Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu<\epsilon|)\rightarrow1$ as $N\rightarrow \infty$, where $L_i$ can be loss of person $i$ and all $L_i$ has mean $\mu$. This means when sample size is big enough, sample mean will approach the true mean.
+- **Law of Large Number**: 
+$$ \text{For any small }\epsilon>0, Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu<\epsilon|)\rightarrow1 \text{ as } N\rightarrow \infty $$
+    - where $L_i$ can be loss of person $i$ and all $L_i$ has mean $\mu$. 
+    - This means when sample size is big enough, sample mean will approach the true mean.
+    - LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.
 
-LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.
-
-- **Central Limit Theorm**: Regardless of how $L_i$ distributes, $\frac{(\frac{L_1+L_2+...+L_N}{N}-\mu)}{\sigma/\sqrt{N}}\rightarrow$ Normal (0,1) as $N\rightarrow \infty$. This means the random variable, sample mean, will be very close to normal if sample size is big enough. 
-
-CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, ($L_i\in\{0,1\}$), then  $\frac{L_1+L_2+...+L_N}{N}=D/N$ if $D$ is the number of deaths. If $N$ is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true $p$ and a standard deviation $\sigma/\sqrt{N}$.
+- **Central Limit Theorm**: 
+$$ \text{Regardless of how } L_i \text{ distributes, } \frac{L_1+L_2+...+L_N}{N}\rightarrow Normal (\mu,\sigma/\sqrt{N}) \text{ as } N\rightarrow \infty.$$ 
+    - This means the random variable, sample mean, will become very close to normal and get narrower if sample size is big enough.
+    - CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, ($L_i\in\{0,1\}$), then  $\frac{L_1+L_2+...+L_N}{N}=D/N$ if $D$ is the number of deaths. If $N$ is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true $p$ and a standard deviation $\sigma/\sqrt{N}$.

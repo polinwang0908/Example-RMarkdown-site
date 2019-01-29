@@ -11,7 +11,7 @@ navbar:
       href: research.html
     - text: "Teaching"
       href: teaching.html
-    - text: "Random Note"
+    - text: "Random Notes"
       href: rnote.html
     - text: "French data test"
       href: 'https://polinwang.shinyapps.io/test/'

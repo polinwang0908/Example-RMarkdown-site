@@ -286,7 +286,7 @@ div.tocify {
   <a href="teaching.html">Teaching</a>
 </li>
 <li>
-  <a href="rnote.html">Random Note</a>
+  <a href="rnote.html">Random Notes</a>
 </li>
 <li>
   <a href="https://polinwang.shinyapps.io/test/">French data test</a>
@@ -3858,13 +3858,18 @@ plot(usa[usa$Year==1933,]$Lx~usa[usa$Year==1933,]$Age,type=&#39;l&#39;)</code></
 <div id="law-of-large-number-and-central-limit-theorem" class="section level3">
 <h3>Law of Large Number and Central Limit Theorem</h3>
 <ul>
-<li><strong>Law of Large Number</strong>: For any small <span class="math inline">\(\epsilon&gt;0\)</span>, <span class="math inline">\(Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu&lt;\epsilon|)\rightarrow1\)</span> as <span class="math inline">\(N\rightarrow \infty\)</span>, where <span class="math inline">\(L_i\)</span> can be loss of person <span class="math inline">\(i\)</span> and all <span class="math inline">\(L_i\)</span> has mean <span class="math inline">\(\mu\)</span>. This means when sample size is big enough, sample mean will approach the true mean.</li>
-</ul>
-<p>LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.</p>
+<li><strong>Law of Large Number</strong>: <span class="math display">\[ \text{For any small }\epsilon&gt;0, Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu&lt;\epsilon|)\rightarrow1 \text{ as } N\rightarrow \infty \]</span>
 <ul>
-<li><strong>Central Limit Theorm</strong>: Regardless of how <span class="math inline">\(L_i\)</span> distributes, <span class="math inline">\(\frac{(\frac{L_1+L_2+...+L_N}{N}-\mu)}{\sigma/\sqrt{N}}\rightarrow\)</span> Normal (0,1) as <span class="math inline">\(N\rightarrow \infty\)</span>. This means the random variable, sample mean, will be very close to normal if sample size is big enough.</li>
+<li>where <span class="math inline">\(L_i\)</span> can be loss of person <span class="math inline">\(i\)</span> and all <span class="math inline">\(L_i\)</span> has mean <span class="math inline">\(\mu\)</span>.</li>
+<li>This means when sample size is big enough, sample mean will approach the true mean.</li>
+<li>LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.</li>
+</ul></li>
+<li><strong>Central Limit Theorm</strong>: <span class="math display">\[ \text{Regardless of how } L_i \text{ distributes, } \frac{L_1+L_2+...+L_N}{N}\rightarrow Normal (\mu,\sigma/\sqrt{N}) \text{ as } N\rightarrow \infty.\]</span>
+<ul>
+<li>This means the random variable, sample mean, will become very close to normal and get narrower if sample size is big enough.</li>
+<li>CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, (<span class="math inline">\(L_i\in\{0,1\}\)</span>), then <span class="math inline">\(\frac{L_1+L_2+...+L_N}{N}=D/N\)</span> if <span class="math inline">\(D\)</span> is the number of deaths. If <span class="math inline">\(N\)</span> is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true <span class="math inline">\(p\)</span> and a standard deviation <span class="math inline">\(\sigma/\sqrt{N}\)</span>.</li>
+</ul></li>
 </ul>
-<p>CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, (<span class="math inline">\(L_i\in\{0,1\}\)</span>), then <span class="math inline">\(\frac{L_1+L_2+...+L_N}{N}=D/N\)</span> if <span class="math inline">\(D\)</span> is the number of deaths. If <span class="math inline">\(N\)</span> is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true <span class="math inline">\(p\)</span> and a standard deviation <span class="math inline">\(\sigma/\sqrt{N}\)</span>.</p>
 </div>
 
 

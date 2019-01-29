@@ -4,6 +4,24 @@ output: html_document
 ---
 **************
 
+### Publications
+
+- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_
+
+### Working Papers
+
+- McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
+
+- McCarthy, David and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
+
+- McCarthy, David and Polin Wang, "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia"
+
+- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in January 2019_
+
+- McCarthy, David and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
+
+
+
 ### Presentations
 
 - Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
@@ -39,18 +57,6 @@ output: html_document
     
     
 
-
-### Working Paper
-
-- McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
-
-- McCarthy, David and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
-
-- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _Revise and resubmit at North American Actuarial Journal_
-
-- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity", _To be under review in January 2019_
-
-- McCarthy, David and Polin Wang, "Using Hierarchical Likelihood to Estimate a Distribution-Based Survival Model for US Mortality"
 
 
 
