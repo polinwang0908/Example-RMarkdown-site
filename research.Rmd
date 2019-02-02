@@ -6,7 +6,7 @@ output: html_document
 
 ### Publications
 
-- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_
+- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_. Accepted January 2019
 
 ### Working Papers
 
