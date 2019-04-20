@@ -36,7 +36,7 @@ $$E(W)=\theta \Leftrightarrow W\text{ is an unbiased estimator of }\theta$$
 
 ##### Efficiency
 
-Given two unbiased estimators of $\theta$, an estimator $W_1$ is efficient relative to $W_2$ if $Var(W1)\leq Var(W2) \forall \theta$
+Given two unbiased estimators of $\theta$, an estimator $W_1$ is efficient relative to $W_2$ if $Var(W1)\leq Var(W2) \quad \forall \theta$
 
 #### Large sample (asymptotic) property
 
@@ -44,7 +44,7 @@ Given two unbiased estimators of $\theta$, an estimator $W_1$ is efficient relat
 
 An estimator is consistent if, as the sample size increases, the estimates (produced by the estimator) "converge" to the true value of the parameter being estimated. To be slightly more precise - consistency means that, as the sample size increases, the sampling distribution of the estimator becomes increasingly concentrated at the true parameter value.
 
-As sample size $n\rightarrow \inf$, $P(\mid W_n-\theta\mid>\epsilon)\rightarrow 0$ 
+As sample size $n\rightarrow \infty$, $P(\mid W_n-\theta\mid>\epsilon)\rightarrow 0$ 
 
 ##### Unbiasedness and consistency are not equivalent: Unbiasedness is a statement about the expected value of the sampling distribution of the estimator. Consistency is a statement about "where the sampling distribution of the estimator is going" as the sample size increases.
 
