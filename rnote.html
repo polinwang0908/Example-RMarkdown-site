@@ -309,6 +309,34 @@ div.tocify {
 
 
 <hr />
+<div id="blue" class="section level3">
+<h3>BLUE</h3>
+<div id="small-finite-sample-property-apply-to-all-sample-sizes-small-and-large" class="section level4">
+<h4>Small (finite) sample property – apply to all sample sizes (small and large)</h4>
+<div id="bias" class="section level5">
+<h5>Bias</h5>
+<p>An estimator is unbiased if, on average, it hits the true parameter value. That is, the mean of the sampling distribution of the estimator is equal to the true parameter value.</p>
+<p>Throw darts to an x-y plane, guessing the how “accurate” to throw it at center <span class="math inline">\(\Rightarrow\)</span> expected value is (0,0) because postive and negative cancel eath other</p>
+<p><span class="math display">\[E(W)=\theta \Leftrightarrow W\text{ is an unbiased estimator of }\theta\]</span></p>
+</div>
+<div id="efficiency" class="section level5">
+<h5>Efficiency</h5>
+<p>Given two unbiased estimators of <span class="math inline">\(\theta\)</span>, an estimator <span class="math inline">\(W_1\)</span> is efficient relative to <span class="math inline">\(W_2\)</span> if <span class="math inline">\(Var(W1)\leq Var(W2) \forall \theta\)</span></p>
+</div>
+</div>
+<div id="large-sample-asymptotic-property" class="section level4">
+<h4>Large sample (asymptotic) property</h4>
+<div id="consistency" class="section level5">
+<h5>Consistency</h5>
+<p>An estimator is consistent if, as the sample size increases, the estimates (produced by the estimator) “converge” to the true value of the parameter being estimated. To be slightly more precise - consistency means that, as the sample size increases, the sampling distribution of the estimator becomes increasingly concentrated at the true parameter value.</p>
+<p>As sample size <span class="math inline">\(n\rightarrow \inf\)</span>, <span class="math inline">\(P(\mid W_n-\theta\mid&gt;\epsilon)\rightarrow 0\)</span></p>
+</div>
+<div id="unbiasedness-and-consistency-are-not-equivalent-unbiasedness-is-a-statement-about-the-expected-value-of-the-sampling-distribution-of-the-estimator.-consistency-is-a-statement-about-where-the-sampling-distribution-of-the-estimator-is-going-as-the-sample-size-increases." class="section level5">
+<h5>Unbiasedness and consistency are not equivalent: Unbiasedness is a statement about the expected value of the sampling distribution of the estimator. Consistency is a statement about “where the sampling distribution of the estimator is going” as the sample size increases.</h5>
+<hr />
+</div>
+</div>
+</div>
 <div id="fixed-effect-clustering" class="section level3">
 <h3>Fixed Effect &amp; Clustering</h3>
 <p>Two ways of getting fixed effect estimation and clustering standard errors: <code>plm</code> and <code>felm</code>. They are consistent without fixed effect, and are slightly different in degree of freedom adjustment when running with either one or both dimensions of fixed effect.</p>

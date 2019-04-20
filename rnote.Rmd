@@ -6,7 +6,50 @@ output:
     toc_float: true
 
 ---
+
+### LLN and CLT
+
+- **Law of Large Number**: 
+$$ \text{For any small }\epsilon>0, Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu<\epsilon|)\rightarrow1 \text{ as } N\rightarrow \infty $$
+    - where $L_i$ can be loss of person $i$ and all $L_i$ has mean $\mu$. 
+    - This means when sample size is big enough, sample mean will approach the true mean.
+    - LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.
+
+- **Central Limit Theorm**: 
+$$ \text{Regardless of how } L_i \text{ distributes, } \frac{L_1+L_2+...+L_N}{N}\rightarrow Normal (\mu,\sigma/\sqrt{N}) \text{ as } N\rightarrow \infty.$$ 
+    - This means the random variable, sample mean, will become very close to normal and get narrower if sample size is big enough.
+    - CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, ($L_i\in\{0,1\}$), then  $\frac{L_1+L_2+...+L_N}{N}=D/N$ if $D$ is the number of deaths. If $N$ is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true $p$ and a standard deviation $\sigma/\sqrt{N}$.
+
 **************
+
+### BLUE
+
+#### Small (finite) sample property -- apply to all sample sizes (small and large)
+
+##### Bias
+
+An estimator is unbiased if, on average, it hits the true parameter value. That is, the mean of the sampling distribution of the estimator is equal to the true parameter value.
+
+Throw darts to an x-y plane, guessing the how "accurate" to throw it at center $\Rightarrow$ expected value is (0,0) because postive and negative cancel eath other
+
+$$E(W)=\theta \Leftrightarrow W\text{ is an unbiased estimator of }\theta$$
+
+##### Efficiency
+
+Given two unbiased estimators of $\theta$, an estimator $W_1$ is efficient relative to $W_2$ if $Var(W1)\leq Var(W2) \forall \theta$
+
+#### Large sample (asymptotic) property
+
+##### Consistency
+
+An estimator is consistent if, as the sample size increases, the estimates (produced by the estimator) "converge" to the true value of the parameter being estimated. To be slightly more precise - consistency means that, as the sample size increases, the sampling distribution of the estimator becomes increasingly concentrated at the true parameter value.
+
+As sample size $n\rightarrow \inf$, $P(\mid W_n-\theta\mid>\epsilon)\rightarrow 0$ 
+
+##### Unbiasedness and consistency are not equivalent: Unbiasedness is a statement about the expected value of the sampling distribution of the estimator. Consistency is a statement about "where the sampling distribution of the estimator is going" as the sample size increases.
+
+**************
+
 ### Fixed Effect \& Clustering
 
 Two ways of getting fixed effect estimation and clustering standard errors: `plm` and `felm`. They are consistent without fixed effect, and are slightly different in degree of freedom adjustment when running with either one or both dimensions of fixed effect.
@@ -191,15 +234,3 @@ plot(usa[usa$Year==1933,]$Lx~usa[usa$Year==1933,]$Age,type='l')
 
 ***********
 
-### Law of Large Number and Central Limit Theorem
-
-- **Law of Large Number**: 
-$$ \text{For any small }\epsilon>0, Pr(|\frac{L_1+L_2+...+L_N}{N}-\mu<\epsilon|)\rightarrow1 \text{ as } N\rightarrow \infty $$
-    - where $L_i$ can be loss of person $i$ and all $L_i$ has mean $\mu$. 
-    - This means when sample size is big enough, sample mean will approach the true mean.
-    - LLN is useful when thinking about the more people are insured, the actual average loss is close to the true loss.
-
-- **Central Limit Theorm**: 
-$$ \text{Regardless of how } L_i \text{ distributes, } \frac{L_1+L_2+...+L_N}{N}\rightarrow Normal (\mu,\sigma/\sqrt{N}) \text{ as } N\rightarrow \infty.$$ 
-    - This means the random variable, sample mean, will become very close to normal and get narrower if sample size is big enough.
-    - CLT is useful when thinking about calculating incident (mortality) rate. e.g. The more people are observed for survival(0) or death(1) in 70 years old, ($L_i\in\{0,1\}$), then  $\frac{L_1+L_2+...+L_N}{N}=D/N$ if $D$ is the number of deaths. If $N$ is big enought, then this probability estimation will be close to normally distributed, with a mean close to the true $p$ and a standard deviation $\sigma/\sqrt{N}$.
