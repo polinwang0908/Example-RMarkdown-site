@@ -52,7 +52,7 @@ $$\Sigma =
 0 & 0 & 0 & \ldots & 0\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 0 & 0 & 0 & \ldots & 1/\sigma^2_n 
-\end{bmatrix}\\ \boxed{\text{Weighted by } \frac{1}{\sigma^2_i}}
+\end{bmatrix}\rightarrow \boxed{\text{Weighted by } \frac{1}{\sigma^2_i}}
 $$
 
 **************
