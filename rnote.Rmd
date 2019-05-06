@@ -1,5 +1,5 @@
 ---
-title: "Random Note"
+title: "Random Notes"
 output:
   html_document:
     toc: true
@@ -39,6 +39,24 @@ $$E(W)=\theta \Leftrightarrow W\text{ is an unbiased estimator of }\theta$$
 > Unbiasedness and consistency are not equivalent: Unbiasedness is a statement about the expected value of the sampling distribution of the estimator. Consistency is a statement about "where the sampling distribution of the estimator is going" as the sample size increases.
 
 **************
+
+### Generalized least square
+
+- GLS $\rightarrow$ WLS (a special case of)
+- To solve heteroskadastisity (so does robust s.e.)
+
+$$\Sigma =
+\begin{bmatrix} {1}/{\sigma^2_1} & 0 & 0 & \ldots & 0\\ 
+0 & {1}/{\sigma^2_2} & 0 & \ldots & 0\\
+0 & 0 & {1}/{\sigma^2_3} & \ldots & 0\\
+0 & 0 & 0 & \ldots & 0\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & 0 & \ldots & 1/\sigma^2_n 
+\end{bmatrix}\\ \boxed{\text{Weighted by } \frac{1}{\sigma^2_i}}
+$$
+
+**************
+
 
 ### Fixed Effect \& Clustering
 

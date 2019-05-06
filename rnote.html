@@ -11,7 +11,7 @@
 
 
 
-<title>Random Note</title>
+<title>Random Notes</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -406,7 +406,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Random Note</h1>
+<h1 class="title toc-ignore">Random Notes</h1>
 
 </div>
 
@@ -455,6 +455,23 @@ div.tocify {
 <blockquote>
 <p>Unbiasedness and consistency are not equivalent: Unbiasedness is a statement about the expected value of the sampling distribution of the estimator. Consistency is a statement about “where the sampling distribution of the estimator is going” as the sample size increases.</p>
 </blockquote>
+<hr />
+</div>
+<div id="generalized-least-square" class="section level3">
+<h3>Generalized least square</h3>
+<ul>
+<li>GLS <span class="math inline">\(\rightarrow\)</span> WLS (a special case of)</li>
+<li>To solve heteroskadastisity (so does robust s.e.)</li>
+</ul>
+<p><span class="math display">\[\Sigma =
+\begin{bmatrix} {1}/{\sigma^2_1} &amp; 0 &amp; 0 &amp; \ldots &amp; 0\\ 
+0 &amp; {1}/{\sigma^2_2} &amp; 0 &amp; \ldots &amp; 0\\
+0 &amp; 0 &amp; {1}/{\sigma^2_3} &amp; \ldots &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \ldots &amp; 0\\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+0 &amp; 0 &amp; 0 &amp; \ldots &amp; 1/\sigma^2_n 
+\end{bmatrix}\\ \boxed{\text{Weighted by } \frac{1}{\sigma^2_i}}
+\]</span></p>
 <hr />
 </div>
 <div id="fixed-effect-clustering" class="section level3">
