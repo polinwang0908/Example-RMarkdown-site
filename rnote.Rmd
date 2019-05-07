@@ -57,6 +57,17 @@ $$
 
 **************
 
+### Generalized method of moments
+
+- It is used to estimate IV
+- \# of parameters < \# of moment conditions $\Rightarrow$ 
+
+$$
+\frac{1}{N}\sum x_i=\hat{\mu} \quad \boxed{equality} \\ \Rightarrow g_1 = \frac{1}{N}\sum x_i -\hat{\mu} \quad\boxed{\text{miniize difference}}
+$$
+
+**************
+
 
 ### Fixed Effect \& Clustering
 
