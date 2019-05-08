@@ -60,10 +60,13 @@ $$
 ### Generalized method of moments
 
 - It is used to estimate IV
-- \# of parameters < \# of moment conditions $\Rightarrow$ 
+- \# of parameters < \# of moment conditions e.g.
 
 $$
-\frac{1}{N}\sum x_i=\hat{\mu} \quad \boxed{equality} \\ \Rightarrow g_1 = \frac{1}{N}\sum x_i -\hat{\mu} \quad\boxed{\text{miniize difference}}
+\begin{split}
+&\Rightarrow\frac{1}{N}\sum x_i=\hat{\mu} \quad &\boxed{\text{Equality}} \\
+&\Rightarrow g_1 = \frac{1}{N}\sum x_i -\hat{\mu} \quad&\boxed{\text{Miniize difference}}
+\end{split}
 $$
 
 **************
