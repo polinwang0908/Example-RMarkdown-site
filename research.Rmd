@@ -21,7 +21,7 @@ output: html_document
 
 - McCarthy, David and Po-Lin Wang, "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia"
 
-- Carson, James, David Eckles, and Po-Lin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity",
+- Carson, James, David Eckles, and Po-Lin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity"
 
 
 
