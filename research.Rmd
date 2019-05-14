@@ -6,27 +6,36 @@ output: html_document
 
 ### Publications
 
-- McCarthy, David and Polin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_. Accepted January 2019
+- McCarthy, David and Po-Lin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_. Accepted January 2019
 
 ### Working Papers
 
-- McCarthy, David and Polin Wang, "How diversifiable are Eurozone state pension liabilities?  An application of a multi-country Bayesian cohort-based approach with a Vector Error-Correction Model prior."
+- McCarthy, David and Po-Lin Wang, "How diversifiable are Eurozone state pension liabilities?  An application of a multi-country Bayesian cohort-based approach with a Vector Error-Correction Model prior."
 
-- Carson, James, David Eckles, Joshua Frederick, and Polin Wang, "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?"
+- Carson, James, David Eckles, Joshua Frederick, and Po-Lin Wang, "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?"
 
 
-- McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
+- McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Po-Lin Wang, "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014"
 
-- McCarthy, David and Polin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
+- McCarthy, David and Po-Lin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
 
-- McCarthy, David and Polin Wang, "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia"
+- McCarthy, David and Po-Lin Wang, "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia"
 
-- Carson, James, David Eckles, and Polin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity",
+- Carson, James, David Eckles, and Po-Lin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity",
 
 
 
 ### Presentations
 
+- 2019 S.S. Huebner Doctoral Colloquium, San Francisco, CA, scheduled in Aug 2019
+    "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
+
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, scheduled in Aug 2019
+    "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
+
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, scheduled in Aug 2019
+    "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?" With James Carson, David Eckles, and Joshua Frederick
+    
 - Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
     "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis
 
