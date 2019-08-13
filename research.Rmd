@@ -27,13 +27,16 @@ output: html_document
 
 ### Presentations
 
-- 2019 S.S. Huebner Doctoral Colloquium, San Francisco, CA, scheduled in Aug 2019
+- 15 International Longevity Risk and Capital Markets Solutions Conference, Washington D.C., scheduled in Sep 2018
+    "How diversifiable are Eurozone state pension liabilities?  An application of a multi-country Bayesian cohort-based approach with a Vector Error-Correction Model prior" With David McCarthy
+
+- 2019 S.S. Huebner Doctoral Colloquium, San Francisco, CA, Aug 2019
     "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
 
-- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, scheduled in Aug 2019
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019
     "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
 
-- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, scheduled in Aug 2019
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019
     "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?" With James Carson, David Eckles, and Joshua Frederick
     
 - Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
