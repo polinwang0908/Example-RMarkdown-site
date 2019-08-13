@@ -15,5 +15,5 @@ output: html_document
     
 - Risk Management and Insurance RMIN 4000 Instructor of Record
 
-    (Spring 2019 -- [Syllabus](https://drive.google.com/file/d/1J2mYaTuITbFIBi3Zjeq5KfuJ5GHRBVCp/view?usp=sharing))
+    (Spring 2019 -- [Syllabus](https://drive.google.com/file/d/1J2mYaTuITbFIBi3Zjeq5KfuJ5GHRBVCp/view?usp=sharing), scheduled: Spring 2020)
 
