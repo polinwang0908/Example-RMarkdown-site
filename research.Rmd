@@ -10,7 +10,7 @@ output: html_document
 
 ### Working Papers
 
-- McCarthy, David and Po-Lin Wang, "How diversifiable are Eurozone state pension liabilities?  An application of a multi-country Bayesian cohort-based approach with a Vector Error-Correction Model prior."
+- McCarthy, David and Po-Lin Wang, "How diversifiable is the mortality risk in Eurozone state pension liabilities?"
 
 - Carson, James, David Eckles, Joshua Frederick, and Po-Lin Wang, "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?"
 
@@ -27,46 +27,46 @@ output: html_document
 
 ### Presentations
 
-- 15 International Longevity Risk and Capital Markets Solutions Conference, Washington D.C., scheduled in Sep 2018
-    "How diversifiable are Eurozone state pension liabilities?  An application of a multi-country Bayesian cohort-based approach with a Vector Error-Correction Model prior" With David McCarthy
+- 15 International Longevity Risk and Capital Markets Solutions Conference, Washington D.C., Sep 2018\
+    "How diversifiable is the mortality risk in Eurozone state pension liabilities?" With David McCarthy
 
-- 2019 S.S. Huebner Doctoral Colloquium, San Francisco, CA, Aug 2019
+- 2019 S.S. Huebner Doctoral Colloquium, San Francisco, CA, Aug 2019\
     "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
 
-- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019\
     "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
 
-- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019
+- American Risk and Insurance Annual Meeting 2019, San Francisco, CA, Aug 2019\
     "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?" With James Carson, David Eckles, and Joshua Frederick
     
-- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
+- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018\
     "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis
 
-- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018
+- Southern Risk and Insurance Annual Meeting 2018, Orlando, FL, Nov 2018\
     "An analysis of period and cohort mortality shocks in international data" with David McCarthy
 
-- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018
+- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018\
     "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems" With David McCarthy, presented by David McCarthy
 
-- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018
+- 14 International Longevity Risk and Capital Markets Solutions Conference, Amsterdam, Netherlands, Sep 2018\
     "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014" With David McCarthy, Florian Bonnet, and Hippolyte d'Albis, presented by David McCarthy
 
-- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018
+- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018\
     "An analysis of period and cohort mortality shocks in international data" With David McCarthy
 
-- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018
+- American Risk and Insurance Annual Meeting 2018, Chicago, IL, Aug 2018\
     "On the existence of market discipline in the face of product complexity and firm opacity" With James Carson and David Eckles
 
-- Southern Risk and Insurance Annual Meeting 2017, Nashville, TN, Nov 2017
+- Southern Risk and Insurance Annual Meeting 2017, Nashville, TN, Nov 2017\
     "Smoke'Em If You Got'Em: Market Discipline in the Life Insurance Industry" With James Carson and David Eckles
 
-- 13 International Longevity Risk and Capital Markets Solutions Conference, Taipei, Taiwan, Sep 2017
+- 13 International Longevity Risk and Capital Markets Solutions Conference, Taipei, Taiwan, Sep 2017\
     "An investigation of period and cohort effects in adult mortality across 38 countries" With David McCarthy
 
-- Southern Risk and Insurance Annual Meeting 2016, Savannah, GA, Nov 2016
+- Southern Risk and Insurance Annual Meeting 2016, Savannah, GA, Nov 2016\
     "Pricing power in life insurance industry" With James Carson and David Eckles
 
-- UGA/FSU Symposium, Tallahassee, FL, May 2016
+- UGA/FSU Symposium, Tallahassee, FL, May 2016\
     "A comparison between Lee-Carter model and a distribution-base cohort model" With David McCarthy
     
     
