@@ -27,6 +27,12 @@ output: html_document
 
 ### Presentations
 
+- Southern Risk and Insurance Annual Meeting 2019, Charleston, SC, scheduled in Nov 2019\
+    "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
+
+- Southern Risk and Insurance Annual Meeting 2019, Charleston, SC, scheduled in Nov 2019\
+    "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?" With James Carson, David Eckles, and Joshua Frederick
+    
 - 15 International Longevity Risk and Capital Markets Solutions Conference, Washington D.C., Sep 2018\
     "How diversifiable is the mortality risk in Eurozone state pension liabilities?" With David McCarthy
 
