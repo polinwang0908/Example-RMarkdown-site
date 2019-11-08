@@ -1,0 +1,15 @@
+
+<table style="text-align:center"><tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr><tr><td>Year</td><td>X1...1</td><td>X1..1.5</td><td>X1..5.10</td><td>X1..10.20</td><td>X1....20</td><td>costSave1</td><td>X2...1</td><td>X2..1.5</td><td>X2..5.10</td><td>X2..10.20</td><td>X2....20</td><td>costSave2</td></tr>
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr><tr><td>2007</td><td>48</td><td>9,029</td><td>1,076</td><td>863</td><td>1,516</td><td>29,607,118.000</td><td>518</td><td>9,026</td><td>991</td><td>684</td><td>1,313</td><td>100,200,788.000</td></tr>
+<tr><td>2008</td><td>43</td><td>9,041</td><td>1,275</td><td>631</td><td>1,952</td><td>32,280,393.000</td><td>505</td><td>9,039</td><td>1,074</td><td>785</td><td>1,539</td><td>105,489,390.000</td></tr>
+<tr><td>2009</td><td>33</td><td>8,078</td><td>1,351</td><td>670</td><td>1,789</td><td>22,728,155.000</td><td>363</td><td>8,368</td><td>1,096</td><td>591</td><td>1,503</td><td>74,196,777.000</td></tr>
+<tr><td>2010</td><td>42</td><td>8,468</td><td>1,292</td><td>488</td><td>1,855</td><td>19,030,983.000</td><td>438</td><td>8,845</td><td>828</td><td>481</td><td>1,553</td><td>62,435,367.000</td></tr>
+<tr><td>2011</td><td>64</td><td>8,374</td><td>1,116</td><td>733</td><td>1,795</td><td>20,833,698.000</td><td>485</td><td>8,682</td><td>690</td><td>761</td><td>1,464</td><td>66,669,763.000</td></tr>
+<tr><td>2012</td><td>73</td><td>8,569</td><td>914</td><td>840</td><td>1,942</td><td>24,376,470.000</td><td>465</td><td>8,816</td><td>710</td><td>705</td><td>1,642</td><td>73,762,340.000</td></tr>
+<tr><td>2013</td><td>94</td><td>8,944</td><td>829</td><td>797</td><td>1,874</td><td>24,850,914.000</td><td>491</td><td>8,973</td><td>761</td><td>884</td><td>1,429</td><td>78,911,248.000</td></tr>
+<tr><td>2014</td><td>95</td><td>8,915</td><td>993</td><td>863</td><td>1,794</td><td>27,318,430.000</td><td>496</td><td>9,085</td><td>1,010</td><td>564</td><td>1,505</td><td>94,151,952.000</td></tr>
+<tr><td>2015</td><td>74</td><td>8,857</td><td>1,362</td><td>559</td><td>2,661</td><td>33,284,980.000</td><td>481</td><td>9,172</td><td>1,005</td><td>522</td><td>2,333</td><td>111,510,179.000</td></tr>
+<tr><td>2016</td><td>66</td><td>8,888</td><td>1,137</td><td>792</td><td>1,967</td><td>28,944,595.000</td><td>359</td><td>9,054</td><td>981</td><td>667</td><td>1,789</td><td>89,436,147.000</td></tr>
+<tr><td>2017</td><td>82</td><td>8,876</td><td>1,137</td><td>705</td><td>2,124</td><td>29,197,452.000</td><td>480</td><td>8,895</td><td>875</td><td>710</td><td>1,961</td><td>92,944,239.000</td></tr>
+<tr><td>2018</td><td>99</td><td>8,913</td><td>1,056</td><td>760</td><td>2,441</td><td>26,785,489.000</td><td>596</td><td>8,826</td><td>998</td><td>643</td><td>2,204</td><td>86,313,409.000</td></tr>
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr></table>

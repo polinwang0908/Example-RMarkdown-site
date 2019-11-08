@@ -19,13 +19,16 @@ output: html_document
 
 - McCarthy, David and Po-Lin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
 
-- McCarthy, David and Po-Lin Wang, "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia"
+- McCarthy, David and Po-Lin Wang, "Pension deficits \& strategic labor supply within worker groups: evidence from employees of the City of Philadelphia"
 
 - Carson, James, David Eckles, and Po-Lin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity"
 
 
 
 ### Presentations
+
+- 2020 Population Association of America (PAA) Annual Meeting, Washington, DC, scheduled in Apr 2020\
+    "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1850-2014". With David McCarthy, Florian Bonnet, and Hippolyte d'Albis
 
 - Southern Risk and Insurance Annual Meeting 2019, Charleston, SC, scheduled in Nov 2019\
     "Choose your pension: an analysis of how pension rules influence overtime work by employees of the City of Philadelphia" With David McCarthy
