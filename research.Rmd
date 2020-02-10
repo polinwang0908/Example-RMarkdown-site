@@ -6,11 +6,13 @@ output: html_document
 
 ### Publications
 
-- McCarthy, David and Po-Lin Wang, "An analysis of period and cohort mortality shocks in international data", _forthcoming in North American Actuarial Journal_. Accepted January 2019
+- McCarthy, David, and Po-Lin Wang. (2019). "An Analysis of Period and Cohort Mortality Shocks in International Data." _North American Actuarial Journal_, 1-25.
 
 ### Working Papers
 
-- McCarthy, David and Po-Lin Wang, "How diversifiable is the mortality risk in Eurozone state pension liabilities?"
+- McCarthy, David and Po-Lin Wang, "How diversifiable is the mortality risk in Eurozone state pension liabilities?" Under review
+
+- McCarthy, David and Po-Lin Wang, "Pension deficits \& strategic labor supply within worker groups: evidence from employees of the City of Philadelphia" Under review
 
 - Carson, James, David Eckles, Joshua Frederick, and Po-Lin Wang, "Did the ACA Inject a Healthy Dose of Discipline in the U.S. Health Insurance Market?"
 
@@ -18,8 +20,6 @@ output: html_document
 - McCarthy, David, Florian Bonnet, Hippolyte d'Albis, and Po-Lin Wang, "An investigation of period and cohort effects in multi-population data, with an application to French regional mortality data from 1901-2014"
 
 - McCarthy, David and Po-Lin Wang, "The effect of longevity risk on the sustainability \& inter-generational equity of public and private transfer systems"
-
-- McCarthy, David and Po-Lin Wang, "Pension deficits \& strategic labor supply within worker groups: evidence from employees of the City of Philadelphia"
 
 - Carson, James, David Eckles, and Po-Lin Wang, "On the Existence of Market Discipline In the Face of Product Complexity and Firm Opacity"
 
