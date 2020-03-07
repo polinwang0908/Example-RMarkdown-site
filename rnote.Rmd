@@ -149,6 +149,12 @@ stargazer(coeftest(fe.firm,vcov=vcovDC(fe.firm,type="sss")),
         - Determinant of $$\left[\begin{array}{rr}\frac{dx}{du} & \frac{dx}{dv}\\ \frac{dy}{du} & \frac{dy}{dv}\end{array}\right]
 $$
     1. Hessian: all combinations of 2nd derivative
+- Output word file -- `kableExtra` should be taken out. It messes with table formatting.
+- Dealing with pdflatex.exe
+    `Sorry, but C:\Users\xxx\AppData\Local\Programs\MIKTEX~1.9\miktex\bin\x64\pdflatex.exe did not succeed`
+    1. Keep tex file
+    1. Compile tex
+    1. Install (update) whatever is necessary
     
 **************
 
