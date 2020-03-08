@@ -155,6 +155,9 @@ $$
     1. Keep tex file
     1. Compile tex
     1. Install (update) whatever is necessary
+- Update R \& rstudio
+    1. Windows: installr::updateR()
+    2. MacOS: [https://cloud.r-project.org/bin/macosx/](https://cloud.r-project.org/bin/macosx/)
     
 **************
 
