@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "About"
 ---
 **************
-I am a PhD candidate in the Department of Insurance, Legal Studies, and Real Estate (ILSRE) in the Terry College of Business at the University of Georgia. I currently also work as a research associate for a research grant funded by Economic and Social Research Council (ESRC), titled as "Changes in the distribution of resources across generations in both the UK and the US". My research interests include martality modeling, asset liability management, generational wealth accounts, and market discipline. 
+Po-Lin is an Assistant Professor in Risk Management and Insurance at the University of South Florida. He holds bachelor degrees in applied mathematics and management science at National Chiao Tung University, master degree of math finance at Boston university, and PhD in risk management and insurance at the University of Georgia. Prior to entering academia, he worked for Cathay life Insurance Company in Taiwan and Cathay Conning Asset Management in Hong Kong, specializing product development and asset liability management (ALM), economic capital (EC) model development in particular. His completed SOA exams include P, FM, MFE, MLC, and C.  His research interests include mortality modeling, asset liability management, inter-generational risk transfer, and insurance market discipline. 

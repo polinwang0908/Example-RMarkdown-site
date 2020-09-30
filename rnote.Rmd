@@ -189,7 +189,7 @@ library(multiwayvcov)
 library(stargazer)
 library(psych)
 #============================================================================
-Root   <-"~/Google Drive/UGA/NAICData_R/"
+Root   <-"~/Google Drive/OneDrive - University of South Florida/UGA/NAICData_R/"
 OutPath<-paste(Root,"Life/StatementsData/",sep="")
 #--------------------------------------------------------------------------
 load(paste(Root,"Projects/Project1 - CarsonEckles - life price/DataLife2.Rta",sep=""))

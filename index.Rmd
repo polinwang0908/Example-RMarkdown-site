@@ -3,15 +3,16 @@ title: "Po-Lin Wang"
 ---
 ****************
 >
-| PhD Candidate
+| Assistant Professor in Risk Management and Insurance
 |
-| Department of Insurance Legal Studies, and Real Estate
-| B417 Amos Hall 
-| Terry College of Business
-| University of Georgia
-| Athens, GA, 30602
+| School of Risk Management and Insurance
+| Muma College of Business, Sarasota-Manatee 
+| University of South Florida 
+| 8350 N. Tamiami Trail C-232
+| Sarasota, FL 34243
 |
-| Email: [polinwang@uga.edu](mailto:polinwang@uga.edu)
+| Email: [polinwang@usf.edu](mailto:polinwang@usf.edu)
+| Office Phone: 941-359-2470
 
 \
 \
@@ -23,7 +24,7 @@ Download my [CV](https://drive.google.com/open?id=11fYgP4730ACtHvJyV-oJ00UJ8vQG7
 
 #### Research Interests
 
-Mortality modeling, asset liability management, generational wealth accounts, and market discipine
+Mortality modeling, asset liability management, inter-generational risk transfer, and insurance market discipline
 
 
 #### Society of Actuary (SOA) Exams Completed:
